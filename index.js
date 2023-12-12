@@ -107,7 +107,9 @@ var greatestDecrease = { date: '', amount: 0 };
 
 // PRINT ANALYSIS TO CONSOLE
 
-
+console.log("Financial Analysis");
+console.log("------------------");
+console.log("Total Months: " + totalMonths);
 
 // Instructions
 // Create a new GitHub repo called Console-Finances. Then, clone it to your computer.
