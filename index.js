@@ -122,6 +122,19 @@ var finances = [
   // On each iteration, compare the current change in profits/losses to what's currently stored
   // If the loss is greater, replace what's currently stored in the variable
 
+
+  // VARIABLES:
+  // 1. total number of months
+  // 2. rolling total of profits
+  // 3. greatest increase (month & amount)
+  // 4. greatest loss (month & amount)
+  // 5. average of the changes
+
+  // INSIDE THE LOOP:
+  // current data point
+  // previous data point
+
+
 // When you open your code in the browser your resulting analysis should look similar to the following:
 
 // Financial Analysis
