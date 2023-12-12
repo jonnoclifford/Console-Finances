@@ -40,7 +40,11 @@ The following image shows the web application's appearance and functionality:
 
 ## Credits
 
-Supported by Edx teaching staff.
+Supported by Edx teaching staff and multiple YouTube tutorials and forum articles, including:
+• Building a Profit Calculator with JavaScript - Tauseed Zaman: https://www.youtube.com/watch?v=8Cxn3AakfTk
+• https://stackoverflow.com/questions/10359907/how-to-compute-the-sum-and-average-of-elements-in-an-array
+• https://www.geeksforgeeks.org/create-a-profit-and-loss-calculator-using-javascript/
+
 
 ## License
 
