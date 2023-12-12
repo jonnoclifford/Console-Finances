@@ -87,6 +87,7 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+
 // DEFINE VARIABLES FOR ANALYSIS
 
 var totalMonths = finances.length;
