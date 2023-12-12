@@ -20,7 +20,7 @@ Write a JavaScript program which analyses an existing dataset/array, and outputs
 
 ### Links
 
-[Link to the deployed website](https://jonnoclifford.github.io/console-finances/)
+[Link to the deployed website](https://jonnoclifford.github.io/Console-Finances/)
 
 [Link to the code repository](https://github.com/jonnoclifford/console-finances)
 
