@@ -30,7 +30,7 @@ No installation required - index.html, index.js this README pushed to Github.
 
 ## Usage
 
-Open website at [https://jonnoclifford.github.io/console-finances](https://jonnoclifford.github.io/console-finances) and then open inspector and run console
+Open website at [https://jonnoclifford.github.io/Console-Finances](https://jonnoclifford.github.io/Console-Finances) and then open inspector and run console
 
 ## Mock-Up
 
