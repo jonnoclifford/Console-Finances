@@ -107,12 +107,12 @@ for (var i = 0; i < finances.length; i++) {
   }
 }
 
-
 // FIND GREATEST INCREASE & DECREASE
 
 
 // CALCULATE AVERAGE CHANGE
 
+averageChange /= (totalMonths - 1);
 
 // PRINT ANALYSIS TO CONSOLE
 
