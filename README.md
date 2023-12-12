@@ -16,7 +16,7 @@ Write a JavaScript program which analyses an existing dataset/array, and outputs
 
 ### Tasks completed
 
-* When the page is loaded and the console is opened, it will print the infomation analysed above in the format specified in the assignment README.
+* When the page is loaded and the console is opened, it will print the infomation analysed above in the format specified in the assignment brief.
 
 ### Links
 
@@ -41,10 +41,12 @@ The following image shows the web application's appearance and functionality:
 ## Credits
 
 Supported by Edx teaching staff and multiple YouTube tutorials and forum articles, including:
-• Building a Profit Calculator with JavaScript - Tauseed Zaman: https://www.youtube.com/watch?v=8Cxn3AakfTk
-• https://stackoverflow.com/questions/10359907/how-to-compute-the-sum-and-average-of-elements-in-an-array
-• https://www.geeksforgeeks.org/create-a-profit-and-loss-calculator-using-javascript/
 
+• Building a Profit Calculator with JavaScript - Tauseed Zaman: https://www.youtube.com/watch?v=8Cxn3AakfTk
+
+• https://stackoverflow.com/questions/10359907/how-to-compute-the-sum-and-average-of-elements-in-an-array
+
+• https://www.geeksforgeeks.org/create-a-profit-and-loss-calculator-using-javascript/
 
 ## License
 
