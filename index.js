@@ -87,7 +87,6 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
-
 // DEFINE VARIABLES FOR ANALYSIS
 
 var totalMonths = finances.length;
@@ -96,19 +95,27 @@ var averageChange = 0;
 var greatestIncrease = { date: '', amount: 0 };
 var greatestDecrease = { date: '', amount: 0 };
 
-// CALCULATE TOTAL PROFIT & LOSS
+// CALCULATE TOTAL PROFIT & LOSS, FIND GREATEST INCREASE & DECREASE
 
 for (var i = 0; i < finances.length; i++) {
   totalProfitLoss += finances[i][1];
+
 
   if (i > 0) {
     var change = finances[i][1] - finances[i - 1][1];
     averageChange += change;
   }
+
+  if (change > greatestIncrease.amount) {
+    greatestIncrease.date = finances[i][0];
+    greatestIncrease.amount = change;
+  }
+
+  if (change < greatestDecrease.amount) {
+    greatestDecrease.date = finances[i][0];
+    greatestDecrease.amount = change;
+  }
 }
-
-// FIND GREATEST INCREASE & DECREASE
-
 
 // CALCULATE AVERAGE CHANGE
 
@@ -121,69 +128,17 @@ console.log("------------------");
 console.log("Total Months: " + totalMonths);
 console.log("Total: $" + totalProfitLoss);
 console.log("Average Change: " + averageChange.toFixed(2));
-
-// Instructions
-// Create a new GitHub repo called Console-Finances. Then, clone it to your computer.
-
-// Copy the starter files in your local git repository.
-
-// You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
-
-// Your task is to write JavaScript code that analyzes the records to calculate each of the following:
-
-// The total number of months included in the dataset.
-  // finances.length
-
-// The net total amount of Profit/Losses over the entire period.
-  // Need a variable for Profits/Losses
-  // Need to be able to compare the data for the loop that we're on to the data fronm the previous loop
-  // Need variable for currrent & previous once we start the loop
-  // Need an if statement to make sure we're on at least month 2 (array index 1 - starts at 0) before starting to figure out profits & losses
-
-// The average of the changes in Profit/Losses over the entire period.
-  // Need a variable to track the average change
-  // That will make use of the current & previous variables that we set up before
-// You will need to track what the total change in Profit/Losses are from month to month and then find the average.
-// (Total/(Number of months - 1))
-
-// The greatest increase in Profit/Losses (date and amount) over the entire period.
-  // Need a variable for the greatest increase in profit
-  // On each iteration, compare the current change in profits/losses to what's currently stored
-  // If the profit is greater, replace what's currently stored in the variable
-
-// The greatest decrease in Profit/Losses (date and amount) over the entire period.
-  // Need a variable for the greatest decrease in profit
-  // On each iteration, compare the current change in profits/losses to what's currently stored
-  // If the loss is greater, replace what's currently stored in the variable
-
-
-  // VARIABLES:
-  // 1. total number of months
-  // 2. rolling total of profits
-  // 3. greatest increase (month & amount)
-  // 4. greatest loss (month & amount)
-  // 5. average of the changes
-
-  // VARIABLES DECLARED INSIDE THE LOOP:
-  // current data point
-  // previous data point
-
-
-// When you open your code in the browser your resulting analysis should look similar to the following:
-
-// Financial Analysis
-// ----------------
-// Total Months: 86
-// Total: $38382578
-// Average Change: -2315.12
-// Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
-// Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
-// Your final code should print the analysis to the console.
-
-// Hints:
-
-// You will need to do some research on your own for this project!
-
-// Remember, in order to combine strings and variables in the console you will need to use concatenation.
-
-// How do you only print to the nearest 100th in JavaScript?
+console.log(
+  "Greatest Increase in Profits/Losses: " +
+    greatestIncrease.date +
+    " ($" +
+    greatestIncrease.amount +
+    ")"
+);
+console.log(
+  "Greatest Decrease in Profits/Losses: " +
+    greatestDecrease.date +
+    " ($" +
+    greatestDecrease.amount +
+    ")"
+);
