@@ -26,7 +26,7 @@ Write a JavaScript program which analyses an existing dataset/array, and outputs
 
 ## Installation
 
-No installation required - index.html, index.js this README pushed to Github.
+No installation required - index.html, index.js and this README pushed to Github.
 
 ## Usage
 
