@@ -98,6 +98,15 @@ var greatestDecrease = { date: '', amount: 0 };
 
 // CALCULATE TOTAL PROFIT & LOSS
 
+for (var i = 0; i < finances.length; i++) {
+  totalProfitLoss += finances[i][1];
+
+  if (i > 0) {
+    var change = finances[i][1] - finances[i - 1][1];
+    averageChange += change;
+  }
+}
+
 
 // FIND GREATEST INCREASE & DECREASE
 
@@ -110,6 +119,8 @@ var greatestDecrease = { date: '', amount: 0 };
 console.log("Financial Analysis");
 console.log("------------------");
 console.log("Total Months: " + totalMonths);
+console.log("Total: $" + totalProfitLoss);
+console.log("Average Change: " + averageChange.toFixed(2));
 
 // Instructions
 // Create a new GitHub repo called Console-Finances. Then, clone it to your computer.
