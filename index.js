@@ -87,6 +87,26 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+// DEFINE VARIABLES FOR ANALYSIS
+
+var totalMonths = finances.length;
+var totalProfitLoss = 0;
+var averageChange = 0;
+var greatestIncrease = { date: '', amount: 0 };
+var greatestDecrease = { date: '', amount: 0 };
+
+// CALCULATE TOTAL PROFIT & LOSS
+
+
+// FIND GREATEST INCREASE & DECREASE
+
+
+// CALCULATE AVERAGE CHANGE
+
+
+// PRINT ANALYSIS TO CONSOLE
+
+
 
 // Instructions
 // Create a new GitHub repo called Console-Finances. Then, clone it to your computer.
@@ -113,7 +133,7 @@ var finances = [
 // (Total/(Number of months - 1))
 
 // The greatest increase in Profit/Losses (date and amount) over the entire period.
-  // Need a variable for the greatest increase in porfit
+  // Need a variable for the greatest increase in profit
   // On each iteration, compare the current change in profits/losses to what's currently stored
   // If the profit is greater, replace what's currently stored in the variable
 
@@ -130,7 +150,7 @@ var finances = [
   // 4. greatest loss (month & amount)
   // 5. average of the changes
 
-  // INSIDE THE LOOP:
+  // VARIABLES DECLARED INSIDE THE LOOP:
   // current data point
   // previous data point
 
